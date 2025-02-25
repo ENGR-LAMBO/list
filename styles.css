@@ -1,0 +1,12 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+#wv {
+    color: red;
+    text-align: center;
+}
+.jj {
+    margin: 50px;
+    text-transform: capitalize;
+}

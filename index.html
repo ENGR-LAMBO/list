@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML-List</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .hl {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+        }
+
+        .hi {
+            float: left;
+        }
+
+        .hi a {
+            display: block;
+            text-align: center;
+            padding-left: 14px;
+            padding-top: 16px;
+            padding-right: 16px;
+            text-decoration: underline red 3px;
+        }
+
+        .ha:hover {
+            background-color: black;
+            color: whitesmoke;
+            text-decoration: none;
+        }
+
+        form {
+            border: 2px solid white;
+            width: 50%;
+            margin: auto;
+            background-color: lightgray;
+            border-radius: 10px;
+        }
+
+        .lab {
+            font-size: 18px;
+            font-weight: bold;
+            display: block;
+            padding: 5px;
+        }
+        .inp {
+            border: 1px solid black;
+            border-radius: 15px;
+            padding: 5px;
+            margin: 5px;
+            width: 90%;
+        }
+        .sub {
+            border: 1px solid black;
+            border-radius: 15px;
+            padding: 5px;
+            margin: 5% 5%;
+            width: 90%;
+            background-color: black;
+            color: white;
+            cursor: pointer;
+        }
+        .sub:hover {
+            background-color: white;
+            color: black;
+        }
+        .dob {
+            border: none;
+            background-color: lightgray;
+        }
+        .inp:focus {
+            border: none;
+            background-color: white;
+            border-radius: 2px;
+            border-bottom: 1px solid red;
+        }
+        .cap {
+            font-size: 24px;
+            font-weight: bold;
+            text-align: center;
+            padding: 10px;
+            margin: auto;
+        }
+
+    </style>
+</head>
+<body>
+    <!-- unordered list -->
+    <ul style="list-style-type: none;">
+        <li>milk</li>
+        <li>tea</li>
+        <li>coffee</li>
+        <li>milo</li>
+    </ul>
+
+    <!-- Nested HTML Lists -->
+    <ul>
+        <li>coffee</li>
+        <li>tea</li>
+        <li>milk</li>
+            <ul>
+                <li>black tea</li>
+                <li>green tea</li>
+                <li>ginger tea</li>
+            </ul>
+        <li>milo</li>
+        <li>sugar</li>
+    </ul>
+
+    <!-- Horizontal List with CSS -->
+
+    <ul class="hl">
+        <li class="hi"><a class="ha" href="#">Home</a></li>
+        <li class="hi"><a class="ha" href="/iframes.html">About</a></li>
+        <li class="hi"><a class="ha" href="#">Services</a></li>
+        <li class="hi"><a class="ha" href="#">Contact</a></li>
+    </ul>
+<br><br><br>
+    <!-- FORMS -->
+    <form>
+        <caption class="cap">SIGN UP</caption>
+        <label class="lab" for="fname"> First Name:</label>
+        <input class="inp" type="text" name="fname" id="fname">
+        <br>
+        <label class="lab" for="lname">Last name:</label>
+        <input class="inp" type="text" name="lname" id="lname">
+        <br>
+        <label class="lab" for="email">E-mail:</label>
+        <input class="inp" type="email" name="email" id="email">
+        <br>
+        <label class="lab" for="dob">Date of Birth:</label>
+        <input class="dob" type="date" name="dob" id="dob">
+        <br>
+        <label class="lab" class="inp" for="pw">Password:</label>
+        <input class="inp" type="password" name="pw" id="pw">
+        <br>
+        <input type="radio" name="" id=""> I have read and agree to the terms and conditions
+        <br>
+        <input type="checkbox" name="" id=""> I have read and agree to the terms and conditions
+        <br>
+        <input class="sub" type="submit" value="Submit">
+    </form>
+
+    <form action="">
+        <p>
+            how old are you?<br> 
+            <input type="radio" name="age" id="5" value="5"> 
+            <label for="age"> 5yrs</label> <br>
+
+            <input type="radio" name="age" id="15" value="15"> 
+            <label for="age"> 15yrs</label> <br>
+
+            <input type="radio" name="age" id="25" value="25"> 
+            <label for="age"> 25yrs</label> <br>
+
+            <input type="radio" name="age" id="35" value="35"> 
+            <label for="age"> 35yrs</label> <br>
+        </p>
+    </form>
+
+    <form>
+          <input type="radio" id="html" name="fav_language" value="HTML">
+          <label for="html">HTML</label><br>
+          <input type="radio" id="css" name="fav_language" value="CSS">
+          <label for="css">CSS</label><br>
+          <input type="radio" id="javascript" name="fav_language" value="JavaScript">
+          <label for="javascript">JavaScript</label>
+        </form> 
+
+    how old are you?<br> 
+        <input type="checkbox" name="" id=""> 5 yrs <br>
+        <input type="checkbox" name="" id=""> 15 yrs <br>
+        <input type="checkbox" name="" id=""> 35 yrs <br>
+        <input type="checkbox" name="" id=""> 45 yrs <br>
+
+
+        <p class="pp" id="wv">
+            hello world
+        </p>
+
+        <p class="jj">
+            hello
+        </p>
+</body>
+</html>
